@@ -252,7 +252,7 @@ sexpr_add_not (unsigned char * in_str)
 
     not_in_str = (unsigned char *) calloc (strlen (in_str) + S_NL + 3, sizeof (char));
     CHECK_ALLOC (not_in_str, NULL);
-    sprintf (not_in_str, "(%s %s)\0", S_NOT, in_str);
+    sprintf (not_in_str, "(%s %s)", S_NOT, in_str);
 
     return not_in_str;
 }
