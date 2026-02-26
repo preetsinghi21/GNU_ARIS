@@ -681,8 +681,7 @@ sexpr_quant_infer (unsigned char * quant_sen, unsigned char * elim_sen,
         if (elim_sen[1] != '(')
         {
             free (str_0);
-            q_pos = tmp_0 + 2;
-            continue;
+            break;
         }
 
         tmp_1 = parse_parens (elim_sen, 1, &str_1);
